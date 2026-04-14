@@ -248,3 +248,11 @@ String formatSchedule(Schedule schedule, [Object locale = 'en']) {
   final s = _resolveStrings(locale);
   return schedule.rules.map((r) => _formatRule(r, s)).join(s.ruleSeparator);
 }
+
+/// Formats a [Schedule] into human-readable strings as array without ruleSeperator.
+/// [locale] may be a locale string ('en', 'fr', 'de', 'es') or a custom [IntlStrings].
+/// Useful for UI elements where you want to display each rule separately.
+List<String> formatScheduleList(Schedule schedule, [Object locale = 'en']) {
+  final s = _resolveStrings(locale);
+  return schedule.rules.map((r) => _formatRule(r, s)).toList();
+}
