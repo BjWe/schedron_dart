@@ -14,4 +14,4 @@ export 'src/types.dart';
 export 'src/parser.dart' show parse;
 export 'src/evaluator.dart' show isActive;
 export 'src/scanner.dart' show nextActivation, nextDeactivation;
-export 'src/intl.dart' show formatSchedule, IntlStrings;
+export 'src/intl.dart' show formatSchedule, formatScheduleList, IntlStrings;
