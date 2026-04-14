@@ -2,6 +2,7 @@ name: schedron
 description: A parser and evaluator for the Schedron scheduling language.
 version: 0.1.0
 repository: https://github.com/BjWe/schedron_dart
+issue_tracker: https://github.com/BjWe/schedron_dart/issues
 license: MIT
 
 environment:
